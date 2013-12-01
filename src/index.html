@@ -1,0 +1,97 @@
+<html>
+
+<head>
+<title>Standard</title>
+<link rel="stylesheet" type="text/css" href="style/reset.css">
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav>
+
+			<img class="logo" src="img/profit.png" width="130px" />
+			<p class="tagline grey-text">
+				Business income & expense tracker. <br/> Coming soon.
+			</p>
+	<div class="signup">
+		<form >
+    
+        <input type="textbox" name="email"  placeholder="email" id="email" class="em" />
+   
+        <button type="submit" class="button">notify me</button>
+
+	</form>
+	</div>
+	</nav>
+
+	</header>
+
+	<div class="content">
+		<img src="img/product.png" class="product"/>
+
+		<div class="item grey-text item1">
+			<img src="img/simple.png" width="150px" />
+			<p class="item-desc">
+				Profit does everything you need and nothing you don't.
+			</p>
+		</div>
+		<div class="item grey-text item2">
+			<img src="img/taxes.png" width="150px" />
+			<p class="item-desc">
+				Deductables and taxable income is calculated and ready.
+			</p>
+		</div>
+		<div class="item grey-text item3">
+			<img src="img/audit.png" width="150px" />
+			<p class="item-desc">
+				When audited simply export, print, and send to the IRS.
+			</p>
+		</div>
+	</div>
+
+	<script>
+		var d = 400;
+		start = function(){
+
+			$(".product").animate({"left":100}, 1000, "easeInCubic");
+
+			setTimeout(function(){ $(".item1").animate({"top":100, "opacity": 1}, 400);}, 800+d);
+			setTimeout(function(){ $(".item2").animate({"top":220, "opacity": 1}, 400);}, 1100+d);
+			setTimeout(function(){ $(".item3").animate({"top":340, "opacity": 1}, 400);}, 1400+d);
+
+		}	
+
+		start();
+
+		
+		$(function() {
+			$('.button').click(function(){
+	    
+		      var em = $("#email").val();
+		      $(".signup").fadeOut(200);
+
+		      setTimeout(function(){  $(".signup").fadeIn(200);  $(".signup").html("Thank you!");}, 300)
+
+		    
+		      $.ajax({
+		         url: 'enter.php' , 
+		         type: 'POST',
+		         data: 'email='+em,
+		         success: function(result){     
+		          
+
+		         }
+		      });   
+		      return false;     
+		   	});
+		  });
+		
+	</script>
+
+</body>
+
+</head>

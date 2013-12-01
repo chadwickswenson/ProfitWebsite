@@ -1,0 +1,116 @@
+html, body{
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+   background:#f7f7f7;
+}
+.grey-bg{
+	background:#f7f7f7;
+}
+.grey-text{
+	color:#909090;
+}
+header{
+	width:100%;
+	background:#fff;
+	display:inline-block;
+	border-bottom:1px solid #e9e9e9;
+	position:relative;
+	height:60px;
+}
+nav{
+	display:block;
+	width:95%;
+	padding:10px;
+	position:relative;
+	margin:0px auto;
+	margin-bottom:10px;
+}
+.tagline{
+	float:left;
+	display:inline-block;
+	padding:0px;
+	margin-left:20px;
+	font-weight:400;
+	line-height:1.2em;
+}
+.logo{
+	float:left;
+	display:inline-block;
+}
+.content{
+	display:block;
+	width:100%;
+	max-width:700px;
+	position:relative;
+	margin:30px auto;
+	overflow:visible;
+
+}
+.product{
+	float:left;
+	position:relative;
+	left:-1000px;
+}
+.item{
+	position:absolute;
+	left:420px;
+	top:0px;
+	opacity:0;
+}
+.item-desc{
+	width:250px;
+	margin-top:5px;
+}
+.item2{
+	top:60px;
+}
+.item3{
+	top:160px;
+}
+.signup{
+	float:right;
+	position:relative;
+	display:inline-block;
+	margin-top:3px;
+
+}
+.button{
+	background:#FAFAFA;
+	border:1px solid #ccc;
+	font-size:1em;
+	font-weight:500;
+	padding:5px 15px 7px 15px;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	border-radius:3px;
+	margin-top:-1px;
+		transition: background 2s;
+-webkit-transition: background 2s; /* Safari */
+cursor:pointer;
+}
+.button:hover{
+	background:#ccc;
+}
+.button:hover{
+	background:#ccc;
+}
+.em{
+	font-size:1em;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	padding:6px;
+	border:1px solid #ccc;
+	border-radius:3px;
+	margin-right:-2px;
+	margin-top:0px;
+	font-weight:200;
+	width:250px;
+	background:#fafafa;
+}
+.em:focus{
+	outline:none;
+	background:#fff;
+}
+.button:focus{
+	outline:none;
+}
+
+
