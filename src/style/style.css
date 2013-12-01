@@ -44,7 +44,7 @@ nav{
 	position:relative;
 	margin:30px auto;
 	overflow:visible;
-
+	zoom:1.05;
 }
 .product{
 	float:left;
@@ -73,6 +73,14 @@ nav{
 	display:inline-block;
 	margin-top:3px;
 
+}
+.signup img{
+	float:left;
+	margin:3px;
+}
+.signup .app{
+	margin-top:-1px;
+	margin-right:5px;
 }
 .button{
 	background:#FAFAFA;
@@ -113,4 +121,28 @@ cursor:pointer;
 	outline:none;
 }
 
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+body{
+zoom:1.3;
+}
+.item-desc{
+	font-size:1.3em;
+}
+.content{
+	margin-top:100px;
+}
+.signup{
+	margin-top:35px;
+	margin-right:20%;
+}
+.em, .button{
+	font-size:1.5em;
+	}
+.em{
+	width:300px;
+}
+}
 
