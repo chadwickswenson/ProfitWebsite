@@ -18,9 +18,9 @@
 				Business income & expense tracker. <br/> Coming soon.
 			</p>
 	<div class="signup">
-		<form >
+		<form id="myform">
     	<img src="img/android.png" width="25px" /><img src="img/apple.png"  class="app" width="23px" />
-        <input type="textbox" name="email"  placeholder="email" id="email" class="em" />
+        <input required type="email" name="email"  placeholder="email" id="email" class="em" />
    
         <button type="submit" class="button">notify me</button>
 
@@ -69,9 +69,11 @@
 
 		
 		$(function() {
-			$('.button').click(function(){
+			$('#myform').submit(function(){
 	    
 		      var em = $("#email").val();
+
+		      
 		      $(".signup").fadeOut(200);
 
 		      setTimeout(function(){  $(".signup").fadeIn(200);  $(".signup").html("Thank you!");}, 300)

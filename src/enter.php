@@ -11,7 +11,7 @@
         
 		$insert = "INSERT INTO db454710182.emails (email)
 					VALUES ('".$_POST['email']."')";
-		echo $insert;
+		
 		mysql_query($insert);
 		
 		mysql_close($con);
